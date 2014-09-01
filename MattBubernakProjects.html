@@ -11,66 +11,7 @@
 </head>
 
   <script>
-    var WorkoutSwitch = 0; 
-    $(document).ready(function(){
-    $("#workoutButton").click(function(){
-      if (WorkoutSwitch == 0)
-      {
-      $("#workout").slideDown();
-      WorkoutSwitch = 1; 
-      } 
-      else
-      {
-       $("#workout").slideUp(); 
-             WorkoutSwitch = 0; 
-      }
-    });  
-  });
-    var CalcBotSwitch = 0; 
-    $(document).ready(function(){
-    $("#CalcbotButton").click(function(){
-       if (CalcBotSwitch == 0)
-      {
-      $("#Rising").slideDown();
-      CalcBotSwitch = 1; 
-      } 
-      else
-      {
-       $("#Rising").slideUp(); 
-             CalcBotSwitch = 0; 
-      }
-    });  
-  });
-    var CalcBot3DSwitch = 0; 
-        $(document).ready(function(){
-    $("#Rising3DButton").click(function(){
-         if (CalcBot3DSwitch == 0)
-      {
-      $("#Rising3D").slideDown();
-      CalcBot3DSwitch = 1; 
-      } 
-      else
-      {
-       $("#Rising3D").slideUp(); 
-             CalcBot3DSwitch = 0; 
-      }
-    });  
-  });
-        var AnimationSwitch = 0; 
-         $(document).ready(function(){
-    $("#AnimationButton").click(function(){
-         if (AnimationSwitch == 0)
-      {
-      $("#Animation").slideDown();
-      AnimationSwitch = 1; 
-      } 
-      else
-      {
-       $("#Animation").slideUp(); 
-             AnimationSwitch = 0; 
-      }
-    });  
-  });
+   
 $(document).ready(function(){
     $('#signature').mouseenter(function(){
        $('#sig1').fadeIn(500); 
@@ -123,12 +64,18 @@ $(document).ready(function(){
   </div>
 </div>
 </div>
-      <div class="panel panel-default">
-                <div class="panel-heading">
-                  <button class= "btn" style="width:100%" id = "workoutButton">Workout Log</button>
-                </div>
-                <div class="panel-body" id = "workout" style= "display:none; width: 100%;" >
-                  <div class="row">
+
+
+<div id="accordion" class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Workout Log </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                   <div class="row">
                     <div class="col-md-6">
                       <img src="Images/Workoutlog.png" width="500"></img>
                     </div>
@@ -149,15 +96,32 @@ $(document).ready(function(){
                     </div>
                   </div>
 
-                </div>
-      </div>
 
-      <div class="panel panel-default">
-                <div class="panel-heading" id = "RisingButton">
-                  <button class= "btn" style="width:100%" id = "CalcbotButton">CalcBot Rising</button>
-                </div>
-                
-                <div class="panel-body" id = "Rising" style= "display:none">
+
+            </div>
+        </div>
+    </div>
+     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">14ers Checklist  </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Calcbot Rising</a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse in">
+            <div class="panel-body">
+
                  <div class="row">
                     <div class="col-md-6">
                       <img src="Images/CalcBot1Screen1.png" width="500"></img>
@@ -171,16 +135,23 @@ $(document).ready(function(){
                       </p>
                     </div>
                   </div>
-                </div>
-      </div>
-
-      <div class="panel panel-default">
-                <div class="panel-heading" id = "Rising3DButton">
-                  <button class= "btn" style="width:100%" id = "Rising3DButton">CalcBot Rising 3D</button>
-                </div>
                 
-                <div class="panel-body" id = "Rising3D"  style= "display:none">
-                  <div class="row">
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Calcbot Rising 3D</a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse in">
+            <div class="panel-body">
+
+      <div class="row">
                     <div class="col-md-6">
                       <img src="Images/CalcBotScreen2.png" width="500"></img>
                     </div>
@@ -193,19 +164,29 @@ $(document).ready(function(){
                       </p>
                     </div>
                   </div>
-                </div>
-      </div>
-
-      <div class="panel panel-default">
-                <div class="panel-heading" id = "AnimationButton">
-                  <button class= "btn" style="width:100%" id = "AnimationButton">Animation Video </button>
-                </div>
                 
-                <div class="panel-body" id = "Animation"  style= "display:none">
-                  <div class="row">
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Animation Project</a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+
+
+
+                    <div class="row">
                     <div class="col-md-6">
                      
-<iframe class="youtube-player" type="text/html" width="540" height="385" src="http://www.youtube.com/embed/fdFued-nK9w" frameborder="0"> </iframe>
+                    <iframe class="youtube-player" type="text/html" width="540" height="385" src="http://www.youtube.com/embed/fdFued-nK9w" frameborder="0"> </iframe>
                     </div>
                     <div class="col-md-6">
                       <h1>
@@ -217,7 +198,12 @@ $(document).ready(function(){
                     </div>
                   </div>
                 </div>
-      </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
     </div>
