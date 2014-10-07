@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<html >
+<head>
+  <title>Matt Bubernak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+  <script>
+   
+$(document).ready(function(){
+    $('#signature').mouseenter(function(){
+       $('#sig1').fadeIn(500); 
+       $('#sig2').fadeOut(500);    
+    });
+    });
+$(document).ready(function(){
+    $('#signature').mouseleave(function(){
+       $('#sig1').fadeOut(500); 
+       $('#sig2').fadeIn(500);    
+    });
+    });
+
+
+
+  </script>
+
+
+<body >
+   <div class="container">
+      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
+        <div class="row">
+          <div class="col-md-2">
+           <a href = "Index.html">
+             <div id="signature" style = "position:relative;">
+                <img src="Images/sigglow.png" id="sig1" width="140" style="display:none; z-index:1; position:absolute;">
+                <img src="Images/sig.png" id="sig2" width="140" style = "display:block; z-index:2; position:absolute;">
+            </div>
+           </a>
+          </div>
+          <div class="col-md-10">
+           <h1 style="font-family:'Segoe UI'; text-align:right ">Matt Bubernak</h1>
+           <p class="lead" style="font-family:'Segoe UI' ; text-align:right "><i>Software Developer - Ultimate Player - Student</i></p>
+          </div>
+        </div>
+
+      
+<div class="btn-group btn-group-justified">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default" onclick="location.href='Index.html'">About</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary" onclick="location.href='Projects.html'">Projects</button>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default" onclick="location.href='Resume.html'">Resume</button>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-default" onclick="location.href='Contact.html'">Contact</button>
+  </div>
+</div>
+</div>
+
+
+<div id="accordion" class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Workout Log </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                   <div class="row">
+                    <div class="col-md-6">
+                      <img src="Images/Workoutlog.png" width="500"></img>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        Workout Log (Windows Phone)
+                      </h1>
+                      <p>
+                        The workout log is an application I developed Junior year of college. The purpose of developing this application was to get familiar with C#, XAML, and windows phone application development in general. This application provides the ability to create workouts, add lifts to them, view results, and provides a simple stopwatch. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div style="text-align:center;">
+                      <a href="http://www.windowsphone.com/en-us/store/app/workoutlog2/af613996-0f12-4a60-ab60-7c3d6f53f975">
+                        <img src="Images/462x120_WPS_Download_blk.png"  width="200"></img>
+                      </a>
+                    </div>
+                  </div>
+
+
+          </div>
+        </div>
+    </div>
+     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Disc Golf Scorecard  </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+
+                   <div class="row">
+                    <div class="col-md-6">
+                      <img src="Images/DiscGolfScorecard.png" width="500"></img>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        Disc Golf Scorecard (Windows Phone)
+                      </h1>
+                      <p>
+                        XAML/C# application that acts as a scorecard for disc golf games. Add players, add courses, and create scorecards. Simple and intuitive UI. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div style="text-align:center;">
+                      <a href="http://www.windowsphone.com/en-us/store/app/14ers-checklist/f4c4cb1b-c8aa-4fcd-af4b-47b0b1e66320">
+                        <img src="Images/462x120_WPS_Download_blk.png"  width="200"></img>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">14ers Checklist  </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+
+                   <div class="row">
+                    <div class="col-md-6">
+                      <img src="Images/14ersChecklist.png" width="500"></img>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        14ers Checklist (Windows Phone)
+                      </h1>
+                      <p>
+                        XAML/C# application developed with the simple intent of logging 14er ascents. Interface is checklist of mountains, user can view information about each mountain, and document ascent info as well. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div style="text-align:center;">
+                      <a href="http://www.windowsphone.com/en-us/store/app/14ers-checklist/98c24141-db18-4b20-838b-23f95ba62b8a">
+                        <img src="Images/462x120_WPS_Download_blk.png"  width="200"></img>
+                      </a>
+                    </div>
+                  </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Calcbot Rising</a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+
+                 <div class="row">
+                    <div class="col-md-6">
+                      <img src="Images/CalcBot1Screen1.png" width="500"></img>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        CalcBot Rising (Javascript)
+                      </h1>
+                      <p>
+                        This is a simple game I made using javascript with HTML canvas. The purpose of it was to better understand javascript as a language, as well as experiment with basic collision and game mechanics.  
+                      </p>
+                    </div>
+                  </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Calcbot Rising 3D</a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+
+      <div class="row">
+                    <div class="col-md-6">
+                      <img src="Images/CalcBotScreen2.png" width="500"></img>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        CalcBot Rising 3D (Open GL)
+                      </h1>
+                      <p>
+                        This is the sequal to CalcBot Rising. I created this project for my graphics class, and it is a fully 3D version of calcbot rising using OpenGL 
+                      </p>
+                    </div>
+                  </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Animation Project</a>
+            </h4>
+        </div>
+        <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body">
+
+
+
+                    <div class="row">
+                    <div class="col-md-6">
+                     
+                    <iframe class="youtube-player" type="text/html" width="540" height="385" src="http://www.youtube.com/embed/fdFued-nK9w" frameborder="0"> </iframe>
+                    </div>
+                    <div class="col-md-6">
+                      <h1>
+                        Animation Video (Maya)
+                      </h1>
+                      <p>
+                        This is not a coding project, but instead was created using Maya 2013. Features all original models(but non-original textures/sounds)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+    </div>
+</body>
+ <div class="well well-sm" style="text-align: center;" >
+  <a href= "mailto:soccerfreak24@gmail.com">
+<img src="Images/mail.png" width="25" height="25" border="0">
+</a>
+
+<a href= "http://www.facebook.com/soccerfreak24">
+<img src="Images/facebook.png" width="25" height="25" border="0">
+</a>
+
+<a href= "http://www.linkedin.com/pub/matt-bubernak/14/98b/b50">
+<img src="Images/linkedin.png" width="25" height="25" border="0">
+</a>
+ </div>
+<p style="text-align:center">
+  -Last Update 2/4/2014-
+</p>
+</html>
