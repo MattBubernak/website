@@ -12,7 +12,7 @@
 <script>
     $(document).ready(function(){
     $("#submitForm").click(function(){
-            <?php mail("soccerfreak24@gmail.com","hello","nud","From: website"); ?>
+            <?php mail("soccerfreak24@gmail.com","hello","nud"); ?>
 
       $("#contactAlert").slideDown();
     });  
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 
 <body >
-      <?php mail("soccerfreak24@gmail.com","hello","nud","From: website"); echo "sent an email"; ?>
+      <?php mail("soccerfreak24@gmail.com","hello","nud"); echo "sent an email"; ?>
 
    <div class="container">
      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
