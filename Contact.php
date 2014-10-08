@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 
 <body >
-      <?php mail("soccerfreak24@gmail.com","hello","nud"); echo "sent an email"; ?>
+      <?php if mail("soccerfreak24@gmail.com","hello","nud") { echo "sent an email" }; else {echo "failed"} ;?>
 
    <div class="container">
      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
