@@ -12,6 +12,7 @@
 <script>
     $(document).ready(function(){
     $("#submitForm").click(function(){
+      <?php echo nud ?>
       $("#contactAlert").slideDown();
     });  
   });
@@ -34,7 +35,7 @@ $(document).ready(function(){
 </script>
 
 
-<?php echo nud ?>
+
 
 <body >
 
