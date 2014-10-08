@@ -34,9 +34,10 @@ $(document).ready(function(){
 </script>
 
 
-
+<?php echo nud ?>
 
 <body >
+
    <div class="container">
      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
         <div class="row">
