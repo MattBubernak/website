@@ -38,7 +38,12 @@ $(document).ready(function(){
 
 
 <body >
-
+      <?php 
+      if (mail("soccerfreak24@gmail.com","hello","nud") )
+         echo "sent an email succesfuly" ;
+      else 
+        echo "failed" ;
+      ?>
 
    <div class="container">
      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
