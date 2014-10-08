@@ -12,7 +12,8 @@
 <script>
     $(document).ready(function(){
     $("#submitForm").click(function(){
-      <?php echo nud ?>
+            <?php mail("soccerfreak24@gmail.com","hello","nud","From: website"); ?>
+
       $("#contactAlert").slideDown();
     });  
   });
@@ -38,6 +39,7 @@ $(document).ready(function(){
 
 
 <body >
+      <?php mail("soccerfreak24@gmail.com","hello","nud","From: website"); ?>
 
    <div class="container">
      <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
