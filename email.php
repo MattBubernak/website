@@ -31,4 +31,6 @@ catch(Mandrill_Error $e)
     throw $e;
 }
 
+echo 'Sent an email!';
+
 ?>
