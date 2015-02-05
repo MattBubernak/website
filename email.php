@@ -1,4 +1,5 @@
 <?php
+echo 'Sent an email!';
 try 
 {
   $mandrill = new Mandrill('MIKaXLOxFA_J-UbzBZTpnA');
@@ -32,6 +33,6 @@ catch(Mandrill_Error $e)
     throw $e;
 }
 
-echo 'Sent an email!';
+
 
 ?>
