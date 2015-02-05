@@ -8,7 +8,7 @@ try
   $message = array(
           'text' => 'Example text content',
           'subject' => 'example subject',
-          'from_email' => 'soccerfreak24@example.com',
+          'from_email' => 'soccerfreak24@gmail.com',
           'from_name' => 'Example Name',
           'to' => array(
               array(
@@ -24,6 +24,8 @@ try
     $send_at = 'example send_at';
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
     print_r($result);
+    echo $result;
+    echo "I think I sent...";
     
 } 
 catch(Mandrill_Error $e) 
