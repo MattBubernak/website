@@ -2,7 +2,7 @@
 try 
 {
   $mandrill = new Mandrill('MIKaXLOxFA_J-UbzBZTpnA');
-
+  /*
   $message = array(
           'text' => 'Example text content',
           'subject' => 'example subject',
@@ -22,6 +22,7 @@ try
     $send_at = 'example send_at';
     $result = $mandrill->messages->send($message, $async, $ip_pool, $send_at);
     print_r($result);
+    */
 } 
 catch(Mandrill_Error $e) 
 {
