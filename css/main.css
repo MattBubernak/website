@@ -39,10 +39,9 @@ body {
 
 /* increase padding for mobile device or smlal screen */
 @media screen and (max-width: 768px) {
-    body { padding-top: 250px; }
+    body { padding-top: 260px; }
     #top_jumbotron 
     {
-
     	position: absolute;
     }
 
