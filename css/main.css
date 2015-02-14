@@ -7,6 +7,17 @@
 	box-shadow: 0px 5px 15px black;
 	border-radius: 0px;
 	padding: 20px;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 9999;
+	width: 100%;
+}
+
+#Matt_Bubernak_Text {
+	font-family:'Segoe UI'; 
+	text-align:left; 
+	font-size:60px;
 }
 
 #menu_button_group {
@@ -28,7 +39,20 @@ body {
 
 /* increase padding for mobile device or smlal screen */
 @media screen and (max-width: 768px) {
-    body { padding-top: 350px; }
+    body { padding-top: 250px; }
+    #top_jumbotron 
+    {
+
+    	position: absolute;
+    }
+
+    #Matt_Bubernak_Text 
+    {
+		font-family:'Segoe UI'; 
+		text-align:left; 
+		font-size:30px;
+	}
+
 }
 
 #vertical_line{
