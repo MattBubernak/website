@@ -1,60 +1,60 @@
 <!DOCTYPE html>
-
-  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
-<html >
+<html>
 <head>
   <title>Matt Bubernak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="css/main.css" rel="stylesheet">
 </head>
+
 <script>
     $(document).ready(function(){
     $("#submitForm").click(function()
     {
-
       $("#contactAlert").slideDown();
-
     });  
   });
-
-
-
-
 </script>
 
+<body>
+   <div class="container" id = "main_container">
+     <!-- Navbar -->
+     <div class="navbar navbar-fixed-top" id="top_jumbotron">
 
-
-
-<body >
-   <div class="container">
-     <div class="jumbotron" style="background: url(Images/background5.jpg); background-size:cover;">
-        <div class="row">
-          <div class="col-md-10">
-           <h1 style="font-family:'Segoe UI'; text-align:left ">Matt Bubernak</h1>
-           <p class="lead" style="font-family:'Segoe UI' ; text-align:left "><i>Software Developer - Ultimate Player - Student</i></p>
+        <div class="row" id="vertical_line">
+          
+          <!-- Header Text -->        
+          <div class="col-md-5 ">
+           <h1 style="font-family:'Segoe UI'; text-align:left; font-size:60px">MATT BUBERNAK
+           </h1>
+           <p class="lead" style="font-family:'Segoe UI' ; text-align:left; color: #ffff4c"><i>Software Developer - Ultimate Frisbee Player - Student</i></p>
           </div>
-        </div>
 
-      <div class="btn-group btn-group-justified">
-        <div class="btn-group">
-         <button type="button" class="btn btn-default" onclick="location.href='Index.html'">About</button>
-        </div>
-        <div class="btn-group">
-         <button type="button" class="btn btn-default" onclick="location.href='Projects.html'">Projects</button>
-        </div>
-        <div class="btn-group">
-         <button type="button" class="btn btn-default" onclick="location.href='Resume.html'">Resume</button>
-        </div>
-        <div class="btn-group">
-         <button type="button" class="btn btn-primary" onclick="location.href='Contact.html'">Contact</button>
-        </div>
+          <!-- Button Group -->
+          <div class="col-md-7 " id="menu_button_group"> 
+            <br>
+            <br>
+            <div class="btn-group btn-group-justified" id="menu_button_group">
+              <div class="btn-group" id="menu_button_group">
+                <button type="button" class="btn btn-default" onclick="location.href='Index.html'">About</button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" onclick="location.href='Projects.html'">Projects</button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default" onclick="location.href='Resume.html'">Resume</button>
+              </div>
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" onclick="location.href='Contact.html'">Contact</button>
+              </div>
+            </div>
+           </div>
+          </div>
       </div>
-     </div>
-
-   <div class="alert alert-failure" id = "contactAlert" style= "display:none">Your message has failed(try just emailingme for now)!</div>
+  <!-- Main Body Text -->
+   <div class="alert alert-success" id = "contactAlert" style= "display:none">Your message has failed(try just emailingme for now)!</div>
 
    <div class="row">
 
@@ -108,27 +108,76 @@
      </div>
    </div>
 
+<br>
+<br>
 
-
-
-
-</body>
 </div>
- <div class="well well-sm" style="text-align: center;" >
-  <a href= "mailto:soccerfreak24@gmail.com">
-<img src="Images/mail.png" width="25" height="25" border="0">
-</a>
+ <div class="well well-sm" id = "bottom_well" >
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+        <a href= "mailto:soccerfreak24@gmail.com">
+        <img src="Images/mail-grey.png" width="50" height="50" border="0">
+        </a>    
+      </div>
+      <div class="back face center">
+        <a href= "mailto:soccerfreak24@gmail.com">
+        <img src="Images/mail.png" width="50" height="50" border="0">
+        </a>
+      </div>
+    </div>
+  </div>
 
-<a href= "http://www.facebook.com/soccerfreak24">
-<img src="Images/facebook.png" width="25" height="25" border="0">
-</a>
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+    <a href= "http://www.facebook.com/soccerfreak24">
+        <img src="Images/facebook-grey.png" width="50" height="50" border="0">
+        </a>    
+      </div>
+      <div class="back face center">
+    <a href= "http://www.facebook.com/soccerfreak24">
+        <img src="Images/facebook.png" width="50" height="50" border="0">
+        </a>
+      </div>
+    </div>
+  </div>
 
-<a href= "http://www.linkedin.com/pub/matt-bubernak/14/98b/b50">
-<img src="Images/linkedin.png" width="25" height="25" border="0">
-</a>
+   <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+    <a href= "http://www.linkedin.com/pub/matt-bubernak/14/98b/b50">
+        <img src="Images/linkedin-grey.png" width="50" height="50" border="0">
+        </a>    
+      </div>
+      <div class="back face center">
+    <a href= "http://www.linkedin.com/pub/matt-bubernak/14/98b/b50">
+        <img src="Images/linkedin.png" width="50" height="50" border="0">
+        </a>
+      </div>
+    </div>
+  </div>
 
- </div>
-<p style="text-align:center">
-  -Last Update 2/5/2015-
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+    <a href= "https://github.com/MattBubernak">
+        <img src="Images/github-grey.png" width="50" height="50" border="0">
+        </a>    
+      </div>
+      <div class="back face center">
+    <a href= "https://github.com/MattBubernak">
+        <img src="Images/github.png" width="50" height="50" border="0">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+
+<p id = "footer_text">
+  - Thanks for the Inspiration <a href="https://www.mattkgross.com" >Matthew Gross</a> , &copy Copyright Matt Bubernak 2015 -
 </p>
+
 </html>
