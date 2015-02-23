@@ -1,8 +1,22 @@
 <?php
 require 'mandrill_api/src/Mandrill.php';
 
+
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("soccerfreak24@gmail.com","My subject",$msg);
+echo "sent";
+
 try 
 {
+
+
+
   $mandrill = new Mandrill('MIKaXLOxFA_J-UbzBZTpnA');
   
   $message = array(
